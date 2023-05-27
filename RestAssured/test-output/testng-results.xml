@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-28T22:50:42 IST" name="Default suite" finished-at="2022-11-28T22:50:47 IST" duration-ms="5533">
+    <groups>
+    </groups>
+    <test started-at="2022-11-28T22:50:42 IST" name="Default test" finished-at="2022-11-28T22:50:47 IST" duration-ms="5533">
+      <class name="APIAutomationtestRest.RestAssured.BasicAPI">
+        <test-method signature="Jasonpathtest()[pri:0, instance:APIAutomationtestRest.RestAssured.BasicAPI@932bc4a]" started-at="2022-11-28T22:50:42 IST" name="Jasonpathtest" finished-at="2022-11-28T22:50:47 IST" duration-ms="5477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Jasonpathtest -->
+      </class> <!-- APIAutomationtestRest.RestAssured.BasicAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

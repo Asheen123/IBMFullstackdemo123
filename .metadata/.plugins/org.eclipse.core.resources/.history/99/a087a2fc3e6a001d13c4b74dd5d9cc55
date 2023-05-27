@@ -1,0 +1,128 @@
+package APIAutomationtestRest.RestAssured;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class BasicAPI {
+
+	
+	@Test(enabled = false)
+	public void GET() {
+        // First fetch the response in the response container
+        Response resp = RestAssured.get("http://localhost:3000/workers/1001");
+        
+        
+        // change the response in string and print it .
+        System.out.println(resp.asString());
+    }
+	
+	@Test(enabled = false)
+	public void POST() {
+		
+		
+		RestAssured.baseURI = "http://localhost:3000";
+		
+		String body = "{\r\n"
+				+ "        \r\n"
+				+ "        \"name\": \"Automationtest1\",\r\n"
+				+ "        \"age\": 26\r\n"
+				+ "    }";
+		
+		RestAssured.given().log().all().body(body).header("Content-Type","application/json")
+		.when().post("workers").then().statusCode(201);
+		
+		// First fetch the response in the response container
+        Response resp = RestAssured.get("http://localhost:3000/workers");
+        
+        
+        // change the response in string and print it .
+        System.out.println(resp.asString());
+	}
+	
+//DELETE
+	
+	@Test(enabled = false)
+    public void Delete() {
+        // First fetch the response in the response container
+        Response resp = RestAssured.when()
+                .delete("http://localhost:3000/workers/1008");
+        // Extract the response code and response message and print it
+        System.out.println(resp.statusCode());
+        System.out.println(resp.statusLine());
+    }
+	
+// PATCH
+	
+	@Test(enabled = false)
+	public void PATCH() {
+		
+		RestAssured.baseURI = "http://localhost:3000";
+		
+		String body = "{\r\n"
+				+ "        \r\n"
+				+ "        \"name\": \"Automationpatched1\"\r\n"
+				+ "       \r\n"
+				+ "    }";
+		
+		RestAssured.given().log().all().body(body).header("Content-Type","application/json").when().patch("workers/1005")
+		.then().log().all().statusCode(200);
+		
+		Response rsp = RestAssured.get("http://localhost:3000/workers/1001");
+		
+		System.out.println(rsp.asString());
+	}
+	
+//PUT
+	
+	@Test(enabled = false)
+    public void PUT() {
+        // For PUT request , we always have to provide the ID fr which you wants to do
+        // the changes
+        String Body = "{\r\n"
+        		+ "        \r\n"
+        		+ "        \"name\": \"Autoamtion\",\r\n"
+        		+ "        \"age\": 24\r\n"
+        		+ "    }";
+        // First fetch the response in the response container
+        Response resp = RestAssured.given().header("Content-Type", "application/json").body(Body).when()
+                .put("http://localhost:3000/workers/1005");
+        // Extract the response code and response message and print it
+        System.out.println("********************************************************************");
+        System.out.println("The status Code is :" + resp.statusCode());
+        System.out.println("The status response line s :" + resp.statusLine());
+        System.out.println("********************************************************************");
+        Response resp2 = RestAssured.get("http://localhost:3000/workers/1005");
+        System.out.println(resp2.asString());
+    }
+	
+	// Data provider method
+    @DataProvider(name = "DP1")
+    public Object[][] dataProviderMethod() {
+        return new Object[][] { { "1005" }, { "1006" }, { "1007" } };
+    }
+    
+    
+ // Passing the ID from dataProvider table using TestNG
+    @Test(enabled = true, dataProvider = "DP1")
+    public void PATCHUsingDataProvider(String ID) {
+        // For PUT request , we always have to provide the ID for which you wants to do
+        // the changes
+        String Body = "{\r\n"
+        		+ "\"name\": \"Automationpatched1\"\r\n"
+        		+ "}";
+        // First fetch the response in the response container
+        Response resp = RestAssured.given().header("Content-Type", "application/json").body(Body).when()
+                .patch("http://localhost:3000/workers/" + ID);
+        // Extract the response code and response message and print it
+        System.out.println("********************************************************************");
+        System.out.println("The status Code is :" + resp.statusCode());
+        System.out.println("The status response line s :" + resp.statusLine());
+        System.out.println("********************************************************************");
+		
+		Response resp2 = RestAssured.get("http://localhost:3000/workers/" + ID);
+        System.out.println(resp2.asString());
+    }
+}

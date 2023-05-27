@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\002DSN744\Desktop\IBM\Fullstacktester\Projects"/>
+			<item value="C:\Users\002DSN744\Desktop\IBM\Fullstacktester\PT"/>
+			<item value="C:\Users\002DSN744\Desktop\IBM\Mockito\springapp\springapp"/>
+			<item value="C:\Users\002DSN744\Desktop\IBM\Mockito\wiremock-stub-server-master\wiremock-stub-server-master"/>
+			<item value="C:\Users\002DSN744\Desktop\IBM\Mockito\mockito2\mockito2"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\002DSN744\Desktop\IBM\Mockito\mockito2\mockito2"/>
+			<item value="C:\Users\002DSN744\Desktop"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="MobileAutomation.Secondtest"/>
+			<item value="MobileAutomation.Firstdemo"/>
+			<item value="APIAutomationtest"/>
+			<item value="APIAutomationtest.Restpractise"/>
+			<item value="APIAutomationtestRest.RestAssured"/>
+			<item value="IBM.FullstackCucumber"/>
+			<item value="IBM.test"/>
+			<item value="IBM.Fullstackdemo1"/>
+			<item value="IBM.Batch2_3Nov2022"/>
+		</list>
+		<list key="groupId">
+			<item value="MobileAutomation"/>
+			<item value="APIAutomationtest"/>
+			<item value="APIAutomationtestRest"/>
+			<item value="IBM"/>
+		</list>
+		<list key="artifactId">
+			<item value="Secondtest"/>
+			<item value="Firstdemo"/>
+			<item value="Restpractise"/>
+			<item value="RestAssured"/>
+			<item value="FullstackCucumber"/>
+			<item value="test"/>
+			<item value="Fullstackdemo1"/>
+			<item value="Batch2_3Nov2022"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

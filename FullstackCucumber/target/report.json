@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-09T17:25:07.855Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1838080300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.init()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Signup",
+        "description": "",
+        "id": "signup-and-send-mail-testing;signup",
+        "after": [
+          {
+            "result": {
+              "duration": 663382600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4746350000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User logs in the elearning portal",
+            "match": {
+              "location": "Assignmentstepdefinations.user_logs_in_the_elearning_portal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3721173200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks Sign Up",
+            "match": {
+              "location": "Assignmentstepdefinations.user_clicks_Sign_Up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1026403200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User gives all details and clicks Register",
+            "match": {
+              "location": "Assignmentstepdefinations.user_gives_all_details_and_clicks_Register()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@assign"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-09T17:25:19.855Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1117813900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.init()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Send mail",
+        "description": "",
+        "id": "signup-and-send-mail-testing;send-mail",
+        "after": [
+          {
+            "result": {
+              "duration": 735240900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6455670000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User logs in the elearning portal",
+            "match": {
+              "location": "Assignmentstepdefinations.user_logs_in_the_elearning_portal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4972600800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User gives Username password and clicks login",
+            "match": {
+              "location": "Assignmentstepdefinations.user_gives_Username_password_and_clicks_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9305841000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks compose give all details and clicks send message button",
+            "match": {
+              "location": "Assignmentstepdefinations.user_clicks_compose_give_all_details_and_clicks_send_message_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63726800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should get a sucessful sent message",
+            "match": {
+              "location": "Assignmentstepdefinations.user_should_get_a_sucessful_sent_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@assign"
+          }
+        ]
+      }
+    ],
+    "name": "Signup and send mail testing",
+    "description": "",
+    "id": "signup-and-send-mail-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Assignment.feature",
+    "tags": []
+  }
+]

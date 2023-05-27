@@ -1,0 +1,46 @@
+package APIAutomationtestRest.RestAssured;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class BasicAPI {
+
+	
+	@Test(enabled = false)
+	public void GET() {
+        // First fetch the response in the response container
+        Response resp = RestAssured.get("http://localhost:3000/workers/1001");
+        
+        
+        // change the response in string and print it .
+        System.out.println(resp.asString());
+    }
+	
+	@Test(enabled = true)
+	public void POST() {
+		
+		
+		RestAssured.baseURI = "http://localhost:3000";
+		
+		String body = "{\r\n"
+				+ "        \r\n"
+				+ "        \"name\": \"Automationtest1\",\r\n"
+				+ "        \"age\": 26\r\n"
+				+ "    }";
+		
+		RestAssured.given().log().all().body(body).header("Content-Type","application/json")
+		.when().post("workers").then().statusCode(201);
+		
+		// First fetch the response in the response container
+        Response resp = RestAssured.get("http://localhost:3000/workers");
+        
+        
+        // change the response in string and print it .
+        System.out.println(resp.asString());
+	}
+	
+	
+
+}

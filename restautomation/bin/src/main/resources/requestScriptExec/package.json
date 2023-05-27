@@ -1,0 +1,19 @@
+{
+  "name": "RequestScriptExecution",
+  "version": "0.0.1",
+  "description": "Pre and Post Request Script Execution Services",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "admin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "save": "^2.4.0",
+    "uuid": "^8.3.0"
+  }
+}

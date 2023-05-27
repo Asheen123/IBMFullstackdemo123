@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- For assistance related to logback-translator or configuration  -->
+<!-- files in general, please contact the logback user mailing list -->
+<!-- at http://www.qos.ch/mailman/listinfo/logback-user             -->
+<!--                                                                -->
+<!-- For professional support please see                            -->
+<!--    http://www.qos.ch/shop/products/professionalSupport         -->
+<!--                                                                -->
+<configuration>
+
+	<appender name="RestAutomationTestLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<append>true</append>
+		 <rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>restautomationtest-app.log.%d{yyyyMMdd}</fileNamePattern>
+			<maxHistory>7</maxHistory>
+		</rollingPolicy> 
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>{ "Time": "%d{yyyy-MMM-dd HH:mm:ss.SSS}", "App": "Rest Automation Test", "Sev": "%level", "Class": "%logger", "Method": "%method", "Msg": "%msg%ex{full}" }%n</pattern>
+		</encoder>
+	</appender>
+
+  <logger name="com.ups.automation.rest.restautomation" level="ALL">
+    <appender-ref ref="RestAutomationTestLogFile"/>
+  </logger>
+  
+</configuration>
+
